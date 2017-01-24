@@ -1,0 +1,104 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Component Styles and Interactions: Modal</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../css/twbs-light.css">
+	<link rel="stylesheet" href="../css/geomanist.css">
+	<link rel="stylesheet" href="../css/component2.css">
+</head>
+<body class="addFlowTransition" id="control">
+	<div class="_demo-rootContainer">
+		<input type="checkbox" id="toggleNavigation" class="globalNav-toggleCheckbox">
+		<input type="checkbox" id="toggleSidepanel" class="sidepanel-toggleCheckbox">
+		<div class="foreground-container _demo-foreground-container">
+			<div class="mainContent">
+				<div class="_demo-content">
+					<h3>Demo</h3>
+					<button class="btn bsBtnMod modal-trigger" data-modal-id="_demoModal-glimpse">Glimpse Example</button>
+					<button class="btn bsBtnMod modal-trigger" data-modal-id="_demoModal-flow">Flow Example</button>
+					<p>Close options</p>
+					<ol>
+						<li>
+							The base class <i>modal-dismiss_trigger</i> applies only the close behavior.
+						</li>
+						<li>
+							The class <i>modal-dismiss_x-trigger</i> is the class that applies behavior and the "X" styling.
+						</li>
+						<li>
+							The class <i>modal-dismiss_x</i> only applies the "X" styling without a close behavior.
+						</li>
+					</ol>
+					<h3>Code</h3>
+					<pre>// Modal trigger: needs to pass the ID of the modal it controls
+&lt;button class="btn modal-trigger btn" data-modal-id="_demoModal"&gt;Trigger CTA&lt;/button&gt;
+// Modal component: needs to match the ID of the trigger
+&lt;div class="{modal|modal-glimpse|modal-flow}" id="_demoModal"&gt;
+	&lt;div class="modal-wrapper"&gt;
+		&lt;button class="{modal-dismiss_trigger|modal-dismiss_x-trigger|modal-dismiss_x}" data-modal-id="_demoModal"&gt;
+			&lt;span class="a11yText"&gt;Close&lt;/span&gt;
+		&lt;/button&gt;
+		&lt;div class="modal-content"&gt;
+			&lt;header class="modal-header"&gt;&lt;h2&gt;This is a header&lt;/h2&gt;&lt;/header&gt;
+			&lt;div class="modal-body"&gt;Lorem ipsum ... &lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+			<label class="globalNav-toggleTrigger_overlay" for="toggleNavigation"></label>
+			<label class="sidepanel-toggleTrigger_overlay" for="toggleSidepanel"></label>
+		</div>
+		<div class="modal-glimpse" id="_demoModal-glimpse">
+			<div class="modal-wrapper">
+				<button class="modal-dismiss_x-trigger" data-modal-id="_demoModal-glimpse">
+					<span class="a11yText">Close</span>
+				</button>
+				<div class="modal-content">
+					<header class="modal-header">
+						<h2>This is a header</h2>
+					</header>
+					<div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-flow" id="_demoModal-flow">
+			<div class="modal-wrapper">
+				<button class="backBtn backBtn_flow _demo_stepBackward">
+						<span>Back</span>
+				</button>
+				<button class="modal-dismiss_x-trigger" data-modal-id="_demoModal-stepped">
+					<span class="a11yText">Close</span>
+				</button>
+				<div class="modal-content steppedFlow-container">
+					<div class="steppedFlow">
+						<div class="steppedFlow-slides">
+							<div class="steppedFlow-slide activeSlide">
+								<header class="modal-header">
+									<h2>Step One</h2>
+								</header>
+								<div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+								<div class="btn-group">
+									<button class="btn bsBtnMod _demo_stepForward">Continue</button>
+								</div>
+							</div>
+							<div class="steppedFlow-slide">
+								<header class="modal-header">
+									<h2>Step Two</h2>
+								</header>
+								<div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+								<div class="btn-group">
+									<button class="btn bsBtnMod modal-dismiss_trigger" data-modal-id="_demoVxModal-stepped">Done</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<script src="../js/lib.js"></script>
+
+<div class="modal-background" id="modal-background">
+</div>
+</body>
+</html>

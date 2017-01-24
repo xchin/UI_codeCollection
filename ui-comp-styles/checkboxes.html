@@ -1,0 +1,60 @@
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form elements: Checkboxes and Radio buttons</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="../css/twbs-light.css">
+		<link rel="stylesheet" href="../css/geomanist.css">
+		<link rel="stylesheet" href="../css/component2.css">
+	</head>
+	<body class="addFlowTransition hasFadeTransition" id="control">
+		<div class="_demo-rootContainer">
+			<div class="foreground-container _demo-foreground-container">
+				<div class="mainContent">
+					<div>
+							<div class="col-md-12">
+								<h3 class="sectionTitle" id="checkbodes">Checkboxes</h3>
+								<div class="styledChkbox">
+									<input type="checkbox" id="checkbox">
+									<label for="checkbox">Select this!</label>
+								</div>
+								<div class="styledChkbox">
+									<input type="checkbox" id="selected-checkbox" checked="">
+									<label for="selected-checkbox">Select this!</label>
+								</div>
+								<div class="styledChkbox has-error">
+									<input type="checkbox" id="has-error-checkbox">
+									<label for="has-error-checkbox">Select this!</label>
+								</div>
+								<h4>Code</h4>
+								<pre>
+						&lt;div class="styledChkbox [has-error]"&gt;
+							&lt;input type="checkbox" id="my-checkbox" /&gt;
+							&lt;label for="my-checkbox"&gt;Text&lt;/label&gt;
+						&lt;/div&gt;
+								</pre>
+								<h3 id="radio-buttons">Radio Buttons</h3>
+								<div class="rdoBtns">
+									<input type="radio" name="choose-me" value="one" id="choose-one">
+									<label for="choose-one">Choose me!</label>
+								</div>
+								<div class="rdoBtns">
+									<input type="radio" name="choose-me" value="two" id="choose-two">
+									<label for="choose-two">Or, choose me!</label>
+								</div>
+								<h4>Code</h4>
+									<pre>
+						&lt;div class="rdoBtns [has-error]"&gt;
+							&lt;input type="radio" id="my-radio-button" /&gt;
+							&lt;label for="my-radio-button"&gt;Text&lt;/label&gt;
+						&lt;/div&gt;
+								</pre>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/lib.js"></script>
+	</body>
+	</html>

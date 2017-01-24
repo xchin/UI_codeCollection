@@ -1,0 +1,1004 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+	<meta charset="utf-8">
+	<title>PayPal Icons Demo</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../css/iconfont.css">
+</head><body>
+	<main class="container ng-scope" data-ng-controller="iconsCtrlr">
+		<div class="rowMain">
+		<h2>Instructions:</h2>
+			<p>The following is the syntax for using the icon font:</p><p>
+
+			</p><pre>&lt;element class="icon icon-{size} {classname}" aria-hidden="true"&gt;&lt;/element&gt;</pre>
+
+			<ol>
+				<li>The first class, <code>icon</code>, assigns all the generic icon properties to the container element.</li>
+				<li>The second class, <code>icon-{size}</code>, assigns the correct sizing to the icon. The choice is small, medium and large.</li>
+				<li>The third class, <code>{classname}</code>, assigns the correct unicode glyph to the psuedoelement</li>
+				<li>The <code>aria-hidden="true"</code> ensures that screenreaders do not read the glyph aloud.</li>
+			</ol>
+
+			<p><em><strong>Please note:</strong> this element should remain empty; don't add additional text or child elements.</em></p>
+
+			<h3>Example one: inline version</h3>
+
+			<pre>&lt;p&gt;&lt;span class="icon icon-small icon-critical-small" aria-hidden="true" &gt;&lt;/span&gt; Your email and password combination failed.&lt;/p&gt;</pre>
+
+			<h3>Example two: stacked version</h3>
+
+			<pre>&lt;div class="icon icon-large icon-critical-large" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;p&gt;Your email and password combination failed.&lt;/p&gt;</pre>
+
+		</div>
+		<div class="rowMain">
+			<h2>Available Icons:</h2>
+			<ul class="iconInfoContainer">
+				<!-- ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-burger-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Burger (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-burger-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE000</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e000</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-slider-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Slider (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-slider-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE001</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e001</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-slider-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Slider (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-slider-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE002</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e002</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-close-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Close (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-close-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE003</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e003</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-add-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Add (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-add-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE004</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e004</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-down-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Down Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-down-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE005</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e005</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-up-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Up Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-up-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE006</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e006</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-left-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Left Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-left-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE007</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e007</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-right-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Right Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-right-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE008</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e008</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-down-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Down Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-down-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE009</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e009</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-up-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Up Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-up-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE010</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e010</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-left-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Left Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-left-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE011</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e011</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-arrow-right-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Right Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-arrow-right-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE012</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e012</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-clear-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Clear (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-clear-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE013</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e013</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-checkmark-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Checkmark (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-checkmark-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE014</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e014</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-checkmark-small-bold" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Bold Checkmark (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-checkmark-small-bold</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE015</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e015</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-action-arrow-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Action Arrow (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-action-arrow-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE016</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e016</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-tooltip-outline-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Tooltip Outline (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-tooltip-outline-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE017</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e017</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-tooltip-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Tooltip (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-tooltip-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE018</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e018</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-info-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Info (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-info-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE019</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e019</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-positive-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Positive (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-positive-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE020</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e020</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-attention-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Attention (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-attention-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE021</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e021</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-critical-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Critical (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-critical-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE022</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e022</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-info-large" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Info (large)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-info-large</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE023</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e023</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">large</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-positive-large" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Positive (large)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-positive-large</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE024</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e024</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">large</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-attention-large" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Attention (large)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-attention-large</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE025</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e025</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">large</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-critical-large" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Critical (large)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-critical-large</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE026</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e026</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">large</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-pp-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">PayPal Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-pp-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE029</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e029</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-visa-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Visa Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-visa-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE030</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e030</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-mastercard-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Mastercard Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-mastercard-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE031</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e031</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-maestro-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Maestro Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-maestro-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE032</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e032</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-amex-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Amex Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-amex-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE033</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e033</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-discover-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Discover Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-discover-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE034</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e034</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-card-half-solid" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Solid Card</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-card-half-solid</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE035</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e035</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-bank-half-solid" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Solid Bank</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-bank-half-solid</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE036</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e036</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-profile-large" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Profile (large)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-profile-large</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE037</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e037</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">large</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-profile-add-large" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Profile Add (large)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-profile-add-large</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE038</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e038</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">large</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-notification-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Notification (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-notification-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE039</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e039</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-settings-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Settings (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-settings-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE040</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e040</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-profile-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Profile (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-profile-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE041</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e041</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-funnel-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Funnel (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-funnel-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE042</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e042</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-delete-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Delete (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-delete-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE043</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e043</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-edit-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Edit (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-edit-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE044</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e044</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-lock-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Lock (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-lock-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE045</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e045</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-pdf-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">PDF (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-pdf-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE046</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e046</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-contact-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Contact (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-contact-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE047</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e047</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-undo-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Undo (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-undo-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE048</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e048</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-cancel-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Cancel (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-cancel-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE049</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e049</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-simple-list-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Simple List (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-simple-list-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE051</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e050</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-detailed-list-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Detailed List (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-detailed-list-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE051</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e051</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-print-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Print (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-print-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE052</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e052</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-camera-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Camera (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-camera-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE053</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e053</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-info-outline-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Info Outline (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-info-outline-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE054</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e054</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-us-dollar-outline-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">US Dollar Outline (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-us-dollar-outline-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE055</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e055</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-calendar-half-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Half Calendar (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-calendar-half-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE056</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e056</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-hiper-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Hiper Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-hiper-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE057</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e057</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-hipercard-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Hipercard Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-hipercard-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE058</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e058</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-elo-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Elo Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-elo-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE059</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e059</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-star-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Star (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-star-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE060</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e060</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-jcb-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">JCB Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-jcb-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE061</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e061</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-attention-outline-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Attention Outline (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-attention-outline-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE062</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e062</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-unionpay-logo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">China Unionpay Logo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-unionpay-logo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE063</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e063</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new-new updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-search-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Search (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-search-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE064</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e064</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new-new updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-desktop-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Desktop (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-desktop-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE065</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e065</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new-new updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-mobile-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Modile (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-mobile-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE066</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e066</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new-new updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-laptop-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Laptop (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-laptop-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE067</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e067</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new-new updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-tablet-small" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Tablet (small)</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-tablet-small</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE068</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e068</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">small</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-send-money" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Send Money</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-send-money</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE500</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e500</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-request-money" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Request Money</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-request-money</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE501</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e501</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-photo" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Photo</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-photo</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE502</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e502</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-gift-cards" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Rewards</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-gift-cards</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE503</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e503</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-credit-card" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Card</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-credit-card</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE504</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e504</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-truck" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Shipping</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-truck</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE505</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e505</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-email" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Email</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-email</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE506</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e506</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-email-solid" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Solid Email</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-email-solid</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE507</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e507</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-bank-check" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Bank</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-bank-check</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE508</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e508</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-calendar" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Calendar</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-calendar</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE509</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e509</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-holiday" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Holiday</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-holiday</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE510</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e510</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-gift" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Gift</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-gift</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE511</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e511</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-wallet" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Wallet</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-wallet</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE512</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e512</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-play-video" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Play Video</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-play-video</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE513</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e513</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-heart" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Heart</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-heart</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE514</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e514</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-shield" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Shield</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-shield</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE515</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e515</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-tunes" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Tunes</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-tunes</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE516</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e516</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-invoice" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Invoice</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-invoice</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE517</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e517</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-shopping-bag" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Shop</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-shopping-bag</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE518</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e518</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-phone" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Phone</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-phone</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE519</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e519</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-phone-solid" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Solid Phone</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-phone-solid</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE520</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e520</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-tag" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Tag</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-tag</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE521</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e521</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-delivery" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Delivery</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-delivery</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE522</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e522</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-questionmark" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Questionmark</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-questionmark</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE523</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e523</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-cut-coupons" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Coupons</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-cut-coupons</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE524</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e524</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-register" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Register</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-register</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE525</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e525</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-house" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">House</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-house</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE526</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e526</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-gift-card" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Gift Card</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-gift-card</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE527</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e527</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-messages" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Messages</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-messages</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE528</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e528</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-add-money" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Add Money</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-add-money</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE529</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e529</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-send-check" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Send Check</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-send-check</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE530</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e530</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-paypal-me" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">PayPal.me</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-paypal-me</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE531</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e531</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-pp-logo-outline" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">PP Logo Outline</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-pp-logo-outline</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE532</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e532</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-money-bag" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Money Bag</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-money-bag</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE533</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e533</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-chip-pin" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Chip and Pin</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-chip-pin</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE534</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e534</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-boleto-ready" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Boleto Ready</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-boleto-ready</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE535</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e535</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-boleto-topup" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Boleto Top Up</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-boleto-topup</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE536</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e536</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new- updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-clock-pay" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Clock Pay Icon</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-clock-pay</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE537</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e537</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new-new updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-speeding-cart" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">Speeding Cart</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-speeding-cart</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE538</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e538</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search --><li class="iconInfo  deprecated- new-new updated-" data-ng-repeat="icon in icons | filter:search">
+					<span class="icon icon-international-transfer" style="font-size: 39px;" aria-hidden="true"></span>
+					<dl>
+						<dt>Name:</dt><dd data-ng-bind="icon.name" class="ng-binding">International Transfer</dd>
+						<dt>Class:</dt><dd><code data-ng-bind="icon.class" class="ng-binding">icon-international-transfer</code></dd>
+						<dt>Unicode:</dt><dd><code data-ng-bind="icon.unicode" class="ng-binding">uniE539</code></dd>
+						<dt>CSS:</dt><dd><code class="content ng-binding" data-ng-bind="icon.content">e539</code></dd>
+						<dt>Size:</dt><dd data-ng-bind="icon.size" class="ng-binding">medium</dd>
+					</dl>
+				</li><!-- end ngRepeat: icon in icons | filter:search -->
+			</ul>
+		</div>
+	</main>
+
+</body></html>

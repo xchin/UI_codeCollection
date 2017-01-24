@@ -1,0 +1,124 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Component Styles and Interactions: Sidepanel</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/geomanist.css">
+	<link rel="stylesheet" href="../css/component2.css">
+</head>
+
+<body id="sidePanel">
+	<div class="rootContainer">
+		<input type="checkbox" id="toggleNavigation" class="globalNav-toggleCheckbox">
+		<input type="checkbox" id="toggleSidepanel" class="sidepanel-toggleCheckbox">
+		<div class="globalNav_main" role="banner">
+			<div class="globalNav-container">
+				<div class="globalNav-brand_desktop">
+					<a href="#"><img src="../img/a_logo.png" alt="Logo" width="106" height="24"></a>
+				</div>
+				<div class="globalNav-navContainer">
+					<nav class="globalNav-nav" role="navigation">
+						<ul class="globalNav-list"></ul>
+						<ul class="globalNav-list_secondary">
+							<li class="hidden-phone">
+								<label for="toggleSidepanel">Open</label>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="foreground-container _demo-foreground-container">
+			<div class="globalNav_mobile">
+				<label for="toggleNavigation" tabindex="1" class="globalNav-toggleTrigger">Main Menu</label>
+				<div class="globalNav-brand_mobile">
+					<a href="#"><img src="img/a_logo.png" alt="Logo" width="106" height="24"></a>
+				</div>
+				<div class="globalNav-actions_mobile">
+					<ul class="globalNav-actionsList_mobile">
+						<li class="globalNav-actionItem_mobile globalNav-notificationItem_mobile">
+							<label class="globalNav-link_notifications isCritical" for="toggleSidepanel">
+								<span class="globalNav-iconWrapper_secondary">
+									<span class="globalNav-navIcon globalNav-navIcon_linkNotifications"></span>
+									<span class="notificationCount">4</span>
+								</span>
+								<span class="globalNav-navText_secondaryMobile">Notifications</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mainContent hasHeader">
+				<div class="_demo-content wHeader"><div>
+				<h3>Sliding Panel Demo</h3>
+				<!-- start slipsum code -->
+				
+				<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
+				
+				<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. </p>
+				
+				<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+				
+				<p>The lysine contingency - it's intended to prevent the spread of the animals is case they ever got off the island. Dr. Wu inserted a gene that makes a single faulty enzyme in protein metabolism. The animals can't manufacture the amino acid lysine. Unless they're continually supplied with lysine by us, they'll slip into a coma and die. </p>
+				
+				<p>The lysine contingency - it's intended to prevent the spread of the animals is case they ever got off the island. Dr. Wu inserted a gene that makes a single faulty enzyme in protein metabolism. The animals can't manufacture the amino acid lysine. Unless they're continually supplied with lysine by us, they'll slip into a coma and die. </p>
+				
+				
+			</div>
+		</div>
+	</div>
+	<label class="globalNav-toggleTrigger_overlay" for="toggleNavigation"></label>
+	<label class="sidepanel-toggleTrigger_overlay" for="toggleSidepanel"></label>
+</div>
+<div class="sidepanel" tabindex="-1">
+<label class="globalNav-toggleTrigger_overlay" for="toggleNavigation"></label>
+<label class="sidepanel-toggleTrigger_overlay" for="toggleSidepanel"></label>
+	<div class="sidepanel-headerContainer">
+		<h3 class="h3_fonted sidepanel-header">Sidepanel content</h3>
+		<div class="sidepanel-headerIcon_right">
+			<button class="icon icon-small icon-close-small">
+				<span class="a11yText"><label for="toggleSidepanel">Close</label></span>
+			</button>
+		</div>
+	</div>
+	<div class="sidepanel-body">
+		<ul class="sidepanel-list">
+			<li>
+				<a href="#" class="sidepanel-item">
+					<span class="alert alert-critical sidepanel-itemIcon"></span>
+					<span class="sidepanel-message">
+						<span>Content with icons, links and hover effects.</span>
+						<span class="sidepanel-itemAction">
+							<span class="sidepanel-itemActionMessage">Call to action</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sidepanel-item">
+					<span class="alert alert-warning sidepanel-itemIcon"></span>
+					<span class="sidepanel-message">Some messages do not require interaction and do not have a CTA or hover state.</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sidepanel-item noAction">
+					<span class="sidepanel-message">In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="sidepanel-item noAction">
+					<span class="sidepanel-messageButton">
+						<span class="bsBtnMod bsBtnMod-block">Button Label</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="sidepanel-footer"></div>
+</div>
+</div>
+<script src="../js/lib.js"></script>
+
+</body>
+</html>

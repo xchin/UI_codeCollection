@@ -1,0 +1,184 @@
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>VX Library Docs &amp; Demo</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/twbs-light.css">
+		<link rel="stylesheet" href="css/geomanist.css">
+		<link rel="stylesheet" href="css/component2.css">
+	</head>
+	<body class="addFlowTransition hasFadeTransition" id="control">
+		<div class="_demo-rootContainer">
+			<div class="foreground-container _demo-foreground-container">
+				<div class="mainContent">
+					<div>
+						<div class="col-md-12">
+							<h2>Inputs and Selects:</h2>
+							<h3>Simple Input</h3>
+							<p class="small-text">An alternative class of 'form-group_hiddenLabel' creates a label-less accessible input. Labels are preferred for accessibility.</p>
+							<div class="form-group">
+								<label for="simple-form-control">Simple Input</label>
+								<input class="form-control" type="text" id="simple-form-control">
+							</div>
+							<div class="form-group has-error">
+								<label for="simple-form-control">Simple Input with Error</label>
+								<input class="form-control" type="text" id="simple-form-control" value="This is incorrect!">
+							</div>
+							<h4>Code</h4>
+							<pre>
+								&lt;div class="{form-group|form-group_hiddenLabel} [has-error]"&gt;
+								&lt;label for="form-control-error" id="simple-form-control"&gt;Text&lt;/label&gt;
+								&lt;input class="form-control form-control _demo-input"
+								type="text" id="simple-form-control" /&gt;
+								&lt;/div&gt;
+							</pre>
+							<hr class="hr-dotted">
+							<h3>Complex Input</h3>
+							<p>
+								<span>These inputs are intended to mimic inputs with variable elements "inside". Of course, an actual </span>
+								<i>&lt;input&gt;</i>
+								<span> element cannot have child elements, so we have to mimic it with the following modifications:</span>
+							</p>
+							<ul>
+								<li>
+									<span>Same parent element as above, but rather than a direct </span>
+									<i>&lt;input&gt;</i>
+									<span> child, use a </span>
+									<i>&lt;div&gt;</i>
+									<span> with a class of </span>
+									<i>form-control-complex</i>
+									<span>.</span>
+								</li>
+								<li>
+									<span>Within the above element, a classless </span>
+									<i>&lt;input&gt;</i>
+									<span> is placed.</span>
+								</li>
+							</ul>
+							<p>
+								<span>Placing icons "within" the input is done by placing a </span>
+								<i>&lt;span&gt;</i>
+								<span> within the </span>
+								<i>form-control-complex</i>
+								<span> element referencing your desired icon. Most likely, this will be an error icon that can be placed preemptively and shown as needed.</span>
+							</p>
+							<h4>Basic Example</h4>
+							<div class="form-group">
+								<label for="form-control_complex">Complex Input</label>
+								<div class="form-control form-control_complex">
+									<input type="text" placeholder="This is a complex form control." id="form-control_complex">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="form-control_complex-with-icon">Complex Input with Leading Icon</label>
+								<div class="form-control form-control_complex">
+									<span class="form-control-icon icon icon-small icon-info-small"></span>
+									<input type="text" placeholder="This is a complex form control." id="form-control_complex-with-icon">
+									<span class="form-control-error-icon icon icon-small icon-critical-small"></span>
+								</div>
+							</div>
+							<div class="form-group has-error">
+								<label for="form-control_complex-with-icon-and-error">Complex Input with Leading Icon and Error</label>
+								<div class="form-control form-control_complex">
+									<span class="form-control-icon icon icon-small icon-info-small"></span>
+									<input type="text" id="form-control_complex-with-icon-and-error" value="This is a complex form control.">
+									<span class="form-control-error-icon icon icon-small icon-critical-small"></span>
+								</div>
+							</div>
+							<h4>Code</h4>
+							<pre>
+								&lt;div class="form-group [has-error]"&gt;
+								&lt;label for="form-control_complex"&gt;Text&lt;/label&gt;
+								&lt;div class="form-control form-control_complex"&gt;
+								[&lt;span class="form-control-icon icon icon-small &lt;your-icon&gt;"&gt;&lt;/span&gt;]
+								&lt;input type="text" id="form-control_complex" /&gt;
+								&lt;span class="form-control-error-icon icon icon-small icon-critical-small"&gt;&lt;/span&gt;
+								&lt;/div&gt;
+								&lt;/div&gt;
+							</pre>
+							<h3>Inputs with messaging: help or error</h3>
+							<p>Many times, we need to communicate information to the user about a particular input. This can be done easily by ...</p>
+							<ul>
+								<li>
+									<span>Add </span>
+									<i>has-message</i>
+									<span> to the parent container: </span>
+									<i>form-group</i>
+								</li>
+								<li>
+									<span>Append a simple </span>
+									<i>&lt;span class="form-control-message"&gt;</i>
+									<span> appended to the parent container above.</span>
+								</li>
+							</ul>
+							<h4>Simple Input with Message</h4>
+							<div class="form-group has-message">
+								<label for="form-control-with-message">Simple Input with Info Message</label>
+								<input class="form-control" type="text" id="form-control-with-message" value="I have additional info!">
+								<span class="form-control-message">I'm helpful!</span>
+							</div>
+							<h4>Simple Input with Error Message</h4>
+								<div class="form-group has-error-with-message">
+									<label for="form-control-with-error-message">Simple Input with Error Message</label>
+									<input class="form-control" type="text" id="form-control-with-error-message" value="I have an error message!">
+									<span class="form-control-message">I'm sorry, but this is invalid!</span>
+								</div>
+							<h4>Complex Input with Message</h4>
+							<div class="form-group has-message">
+								<label for="form-control_complex-message">Complex Input with Info</label>
+								<div class="form-control form-control_complex">
+									<input type="text" id="form-control_complex-message" value="This is a complex form control with an info message.">
+									<span class="form-control-error-icon icon icon-small icon-critical-small"></span>
+								</div>
+								<span class="form-control-message">I'm helpful too!</span>
+							</div>
+							<h4>Code</h4>
+							<pre>
+								&lt;div class="form-group has-message [has-error-with-message]"&gt;
+								&lt;label for="form-control-with-message"&gt;Text&lt;/label&gt;
+								&lt;input class="form-control" type="text"
+									id="form-control-with-message" /&gt;
+								&lt;span class="form-control-message"&gt;Text&lt;/span&gt;
+								&lt;/div&gt;
+							</pre>
+							<h3 id="selects">Selects (Version One)</h3>
+							<div class="form-group">
+								<label for="select">Basic Select</label>
+								<select class="form-control form-control" id="select">
+									<option>All activity</option>
+									<option>Payments received</option>
+									<option>Payments sent</option>
+									<option>Money withdrawn</option>
+									<option>Refunds</option>
+								</select>
+								<span class="selectIcon_error"></span>
+							</div>
+							<div class="form-group has-error">
+								<label for="select-with-error">Basic Select with Error</label>
+								<select class="form-control form-control" id="select-with-error">
+									<option>All activity</option>
+									<option>Payments received</option>
+									<option>Payments sent</option>
+									<option>Money withdrawn</option>
+									<option>Refunds</option>
+								</select>
+								<span class="selectIcon_error"></span>
+							</div>
+							<h4>Code</h4>
+							<pre>
+								&lt;div class="form-group [has-error]"&gt;
+								&lt;label for="select"&gt;Text&lt;/label&gt;
+								&lt;select class="form-control" id="select"&gt;
+								&lt;option value=""&gt;text&lt;/option&gt;
+								&lt;/select&gt;
+								[&lt;span class="selectIcon_error"&gt;&lt;/span&gt;]
+								&lt;/div&gt;
+							</pre>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/lib.js"></script>
+	</body>
+	</html>

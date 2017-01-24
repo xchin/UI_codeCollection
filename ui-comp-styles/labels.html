@@ -1,0 +1,116 @@
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form elements: Floating Labels</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="../css/twbs-light.css">
+		<link rel="stylesheet" href="../css/geomanist.css">
+		<link rel="stylesheet" href="../css/component2.css">
+	</head>
+	<body class="addFlowTransition hasFadeTransition" id="control">
+		<div class="_demo-rootContainer">
+			<div class="foreground-container _demo-foreground-container">
+				<div class="mainContent">
+					<div>
+						<div class="col-md-12">
+							<h2>Floating Labels</h2>
+							<p><strong>Use with caution; please test well before pushing to production.</strong></p>
+							<h3>Instructions for use:</h3>
+							<p>
+								<span>To add the floating label style to inputs, the addition of the </span>
+								<i>floatingLabel</i>
+								<span> class is required in addition to a </span>
+								<i>data-label-content</i>
+								<span> attribute that should contain the same text as your actual </span>
+								<i>&lt;label&gt;</i>
+								<span> element </span>
+								<strong>as well as the existing basic form input classes</strong>
+								<span> from above. To add the functionality, of the floating label, the addition of the </span>
+								<i>inputs-selects.js</i>
+								<span> or the compiled </span>
+								<i>lib.js</i>
+								<span> is needed.</span>
+							</p>
+							<p>The JS, when executed on the client, loops through all the instances of the floatingLabel class and adjusts the input's according to an existence of a provided defaultValue or not. This means that all inputs start with the label in the "up" position, and then after the loops adjusts it according to what it finds.</p>
+							<div class="alert alert-help">
+								<p class="alert-text">
+									<strong>If performance is critical</strong>
+									<span>, or you do not want any shifting of the inputs between server render and JS execution, then you are welcome to manually add the </span>
+									<i>_active</i>
+									<span> postfix to the class. This tells the component that you will be responsible for manually adding </span>
+									<i>hasValue</i>
+									<span> class when an input has a pre-existing defaultValue or not. If you take this route, you are wholly responsible for managing the server-rendered state.</span>
+								</p>
+							</div>
+							<h3>Simple Floating Label Input</h3>
+							<div class="floatingLabel_active" data-label-content="Simple Input">
+								<label for="simple-form-control">Simple Input</label>
+								<input class="form-control" type="text" id="simple-form-control">
+							</div>
+							<div class="has-error hasValue floatingLabel_active" data-label-content="Simple Input with Error">
+								<label for="simple-form-control">Simple Input with Error</label>
+								<input class="form-control" type="text" id="simple-form-control" value="This is incorrect!">
+							</div>
+							<h4>Code</h4>
+							<pre>
+								&lt;div class="floatingLabel [has-error]"
+								data-label-content="Text"&gt;
+								&lt;label for="form-control-error" id="simple-form-control"&gt;Text&lt;/label&gt;
+								&lt;input class="form-control form-control"
+								type="text" id="simple-form-control" /&gt;
+								&lt;/div&gt;
+							</pre>
+							<hr class="hr-dotted">
+							<h3>Complex Floating Label Input</h3>
+							<p>
+								<span>Please note that these "complex", floating-label components syntactically differ from that of the non-floating-label components. Also note that the error icon is required, but will only show when </span>
+								<i>has-error</i>
+								<span> is added to container.</span>
+							</p>
+							<h4>Basic Example</h4>
+							<div class="floatingLabel_complex floatingLabel_active">
+								<label for="form-control_complex">Complex Input</label>
+								<div class="form-control" data-label-content="Complex Input">
+									<input type="text" placeholder="This is a complex form control." id="form-control_complex">
+								</div>
+								<span class="form-control-error-icon icon icon-small icon-critical-small"></span>
+							</div>
+							<div class="floatingLabel_complex floatingLabel_active">
+								<label for="form-control_complex-with-icon">Complex Input with Leading Icon</label>
+								<span class="form-control-icon icon icon-small icon-info-small"></span>
+								<div class="form-control" data-label-content="Complex Input with Leading Icon">
+									<input type="text" placeholder="This is a complex form control." id="form-control_complex-with-icon">
+								</div>
+								<span class="form-control-error-icon icon icon-small icon-critical-small"></span>
+							</div>
+							<div class="floatingLabel_complex has-error-with-message hasValue floatingLabel_active">
+								<label for="form-control_complex-with-icon-and-error">Complex Input with Leading Icon and Error Message</label>
+								<span class="form-control-icon icon icon-small icon-info-small"></span>
+								<div class="form-control" data-label-content="Complex Input with Leading Icon and Error Message">
+									<input type="text" id="form-control_complex-with-icon-and-error" value="This is a complex form control.">
+								</div>
+								<span class="form-control-error-icon icon icon-small icon-critical-small"></span>
+								<span class="form-control-message">I'm sorry, but this is invalid!</span>
+							</div>
+							<h4>Code</h4>
+							<pre>
+								&lt;div class="floatingLabel floatingLabel_complex [{has-error|has-error-with-message}]"
+								data-label-content="Text"&gt;
+								&lt;label for="form-control_complex"&gt;Text&lt;/label&gt;
+								[&lt;span class="form-control-icon icon icon-small &lt;your-icon&gt;"&gt;&lt;/span&gt;]
+								&lt;div class="form-control"&gt;
+								&lt;input type="text" id="form-control_complex" /&gt;
+								&lt;/div&gt;
+								&lt;span class="form-control-error-icon icon icon-small icon-critical-small"&gt;&lt;/span&gt;
+								&lt;/div&gt;
+							</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/lib.js"></script>
+	</body>
+	</html>

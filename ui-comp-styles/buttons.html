@@ -1,0 +1,137 @@
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>VX Library Docs &amp; Demo</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="../css/twbs-light.css">
+		<link rel="stylesheet" href="../css/geomanist.css">
+		<link rel="stylesheet" href="../css/component2.css">
+	</head>
+	<body class="addFlowTransition hasFadeTransition" id="control">
+		<div class="_demo-rootContainer">
+			<div class="foreground-container _demo-foreground-container">
+				<div class="mainContent">
+					<div>
+						<div class="col-md-12">
+							<h2>Buttons</h2>
+							<h3>Primary:</h3>
+								<div class="row text-block">
+									<div class="col-xs-4">
+										<button class="btn bsBtnMod">Button</button>
+									</div>
+									<div class="col-xs-4">
+										<button class="btn bsBtnMod bsBtnMod-medium">Button</button>
+									</div>
+									<div class="col-xs-4">
+										<button class="btn bsBtnMod bsBtnMod-small">Button</button>
+									</div>
+								</div>
+								<h3>Secondary:</h3>
+								<div class="row text-block">
+									<div class="col-xs-4">
+										<button class="btn bsBtnMod bsBtnMod-secondary">Button</button>
+									</div>
+									<div class="col-xs-4">
+										<button class="btn bsBtnMod bsBtnMod-secondary bsBtnMod-medium">Button</button>
+									</div>
+									<div class="col-xs-4">
+										<button class="btn bsBtnMod bsBtnMod-secondary bsBtnMod-small">Button</button>
+									</div>
+								</div>
+								<h3>Code</h3>
+								<pre>
+&lt;{a|button|input} class="bsBtnMod [bsBtnMod-secondary, {bsBtnMod-medium|bsBtnMod-small}, {bsBtnMod-disabled|bsBtnMod-active}]&gt;
+	Text
+&lt;/{a|button|input}&gt;		</pre>
+								<h3>Examples for Reverse Contrast:</h3>
+								<p>Note that there are two options for primary buttons to be used at the discretion of UED</p>
+								<div class="reverse-contrast">
+									<div class="text-block">
+										<div class="row">
+											<div class="col-xs-12">
+												<button class="bsBtnMod bsBtnMod_reversed">Primary</button>
+												<button class="bsBtnMod bsBtnMod-secondary_reversed">Secondary</button>
+												<button class="bsBtnMod reverse-contrast" disabled="">Disabled</button>
+											</div>
+										</div>
+									</div>
+									<div class="text-block">
+										<div class="row">
+											<div class="col-xs-12">
+												<button class="bsBtnMod">Primary</button>
+												<button class="bsBtnMod bsBtnMod-secondary_reversed">Secondary</button>
+												<button class="bsBtnMod" disabled="">Disabled</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h3>Code</h3>
+								<pre>
+&lt;{a|button|input} class="bsBtnMod [bsBtnMod-secondary_reversed | bsBtnMod_reversed, {bsBtnMod-medium|bsBtnMod-small}, {bsBtnMod-disabled|bsBtnMod-active}]&gt;
+	Text
+&lt;/{a|button|input}&gt;
+								</pre>
+								<hr class="hr-dotted">
+								<h2>Block Buttons (full width)</h2>
+								<button class="bsBtnMod bsBtnMod-secondary bsBtnMod-block">Block button</button>
+								<button class="bsBtnMod bsBtnMod-block">Block button</button>
+								<h3>Code</h3>
+								<pre>&lt;button className="bsBtnMod bsBtnMod-block"&gt;Block button&lt;/button&gt;</pre>
+								<hr class="hr-dotted">
+								<h3>Button Groups:</h3>
+								<div class="bsBtnMod-group">
+									<button class="btn bsBtnMod bsBtnMod-secondary">Secondary Button</button>
+									<button class="btn bsBtnMod">Primary Button</button>
+								</div>
+								<h3>Code</h3>
+								<pre>
+&lt;div class="bsBtnMod-group"&gt;
+	&lt;!-- buttons of same size --&gt;
+&lt;/div&gt;
+								</pre>
+								<hr class="hr-dotted">
+								<h2>Two-up Buttons:</h2>
+								<p>This is a very common pattern for having buttons side-by-side. Just ensure your minifying your HTML, or you may get a strange carriage return after the first button. NOTE: the class <i>blocks-for-mobile</i> ensures that at narrow widths, the buttons become block (full-width).</p>
+								<div class="bsBtnMod-twoUp blocks-for-mobile">
+									<button class="btn bsBtnMod bsBtnMod-secondary">Secondary Button</button>
+									<button class="btn bsBtnMod">Primary Button</button>
+								</div>
+								<h3>Code</h3>
+								<pre>
+&lt;div class="bsBtnMod-twoUp [blocks-for-mobile]"&gt;
+	&lt;!-- buttons of same size --&gt;
+&lt;/div&gt;
+								</pre>
+								<hr class="hr-dotted">
+								<h2>Button as Link:</h2>
+								<button class="btn bsBtnMod-link">Button as a link</button>
+								<h3>Code</h3>
+								<pre>&lt;button className="btn bsBtnMod-link"&gt;Button as a link&lt;/button&gt;</pre>
+								<hr class="hr-dotted">
+								<h3>Add new button:</h3>
+								<div class="row">
+									<div class="col-xs-4">
+										<h4>Primary:</h4>
+										<button class="addBtn-primary">Link a bank or card</button>
+									</div>
+									<div class="col-xs-4 _demo-btn-add">
+										<h4>Secondary:</h4>
+										<button class="addBtn-secondary">Add a new address</button>
+									</div>
+								</div>
+								<h3>Code</h3>
+								<pre>
+&lt;{a|button} class="{addBtn-primary|addBtn-secondary}"&gt;
+	Text
+&lt;/{a|button}&gt;
+								</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/lib.js"></script>
+	</body>
+	</html>

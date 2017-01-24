@@ -1,0 +1,213 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Component Styles and Interactions: Header</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../css/twbs-light.css">
+	<link rel="stylesheet" href="../css/component2.css">
+</head>
+<body>
+<div class="globalNav_main" role="banner">
+
+	<div class="globalNav-container">
+		<div class="globalNav-brand_desktop">
+			<a href="#">
+				<a href="#"><img src="../img/a_logo.png" alt="Logo" width="106" height="24"></a>
+			</a>
+		</div>
+
+		<div class="globalNav-navContainer">
+			<nav class="globalNav-nav" role="navigation">
+				<ul class="globalNav-list">
+					<li class="isActive">
+						<a href="#">
+							<span class="globalNav-iconWrapper">
+								<span class="globalNav-navIcon globalNav-navIcon_linkHome"></span>
+							</span>
+							<span class="globalNav-navText">Home</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<span class="globalNav-iconWrapper">
+								<span class="globalNav-navIcon globalNav-navIcon_linkWork"></span>
+							</span>
+							<span class="globalNav-navText">Work</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<span class="globalNav-iconWrapper">
+								<span class="globalNav-navIcon globalNav-navIcon_linkGoodies"></span>
+							</span>
+							<span class="globalNav-navText">Goodies</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="globalNav-list_secondary">
+					<li class="hidden-phone">
+						<label class="globalNav-link_notifications isCritical" for="toggleSidepanel">
+							<span class="globalNav-iconWrapper_secondary">
+								<span class="globalNav-navIcon globalNav-navIcon_linkNotifications"></span>
+								<span class="notificationCount">5</span>
+							</span>
+							<span class="globalNav-navText_secondary">Alerts</span>
+						</label>
+					</li>
+
+					<li>
+						<a href="#" class="globalNav-link_settings">
+							<span class="globalNav-iconWrapper_secondary">
+								<span class="globalNav-navIcon globalNav-navIcon_linkSettings"></span>
+							</span>
+							<span class="globalNav-navText_secondary">Settings</span>
+						</a>
+					</li>
+
+					<li class="globalNav-listItem_logout">
+						<a href="#" class="globalNav-link_logout">Button</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="foreground-container _demo-foreground-container">
+	<div class="globalNav_mobile">
+		<label for="toggleNavigation" tabindex="1" class="globalNav-toggleTrigger">
+			Main Menu
+		</label>
+		<div class="globalNav-brand_mobile">
+			<a href="#">
+				<img src="img/a_logo.png" alt="Logo" width="106" height="24">
+			</a>
+		</div>
+
+		<div class="globalNav-actions_mobile">
+			<ul class="globalNav-actionsList_mobile">
+				<li class="globalNav-actionItem_mobile globalNav-notificationItem_mobile">
+					<label class="globalNav-link_notifications isCritical" for="toggleSidepanel">
+								<span class="globalNav-iconWrapper_secondary">
+									<span class="globalNav-navIcon globalNav-navIcon_linkNotifications"></span>
+									<span class="notificationCount">5</span>
+								</span>
+						<span class="globalNav-navText_secondaryMobile">Notifications</span>
+					</label>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="mainContent">
+		<div class="_demo-content wHeader">
+		<h2>Responsive Sticky Header</h2>
+		<p>A header component with responsive styling. Your using a [user-agent]. You can see the mobile styles by resizing the browser window to it's thinnest width.</p>
+			<h3>Example code for header:</h3>
+			<pre>&lt;input type="checkbox" id="toggleNavigation"
+  class="<strong>globalNav-toggleCheckbox</strong>"&gt;
+
+&lt;div class="<strong>globalNav_main</strong>"
+  role="banner"&gt;
+
+  &lt;div class="<strong>globalNav-container</strong>"&gt;
+    &lt;div class="<strong>globalNav-brand_desktop</strong>"&gt;
+      &lt;a href="#"&gt;
+        &lt;img src="img/a_logo.png"
+          alt="Logo" width="106" height="24"&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="<strong>globalNav-navContainer</strong>"&gt;
+      &lt;nav class="<strong>globalNav-nav</strong>" role="navigation"&gt;
+		&lt;ul class="<strong>globalNav-list</strong>"&gt;
+			&lt;li class="<strong>isActive</strong>"&gt;
+				&lt;a href="#"&gt;
+					&lt;span class="<strong>globalNav-iconWrapper</strong>"&gt;
+						&lt;span class="<strong>globalNav-navIcon globalNav-navIcon_linkHome</strong>">&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span class="<strong>globalNav-navText</strong>"&gt;Home&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#"&gt;
+					&lt;span class="<strong>globalNav-iconWrapper</strong>"&gt;
+						&lt;span class="<strong>globalNav-navIcon globalNav-navIcon_linkWork</strong>">&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span class="<strong>globalNav-navText</strong>">Work&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#"&gt;
+					&lt;span class="<strong>globalNav-iconWrapper</strong>"&gt;
+						&lt;span class="<strong>globalNav-navIcon globalNav-navIcon_linkGoodies</strong>">&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span class="<strong>globalNav-navText</strong>">Goodies&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;ul class="<strong>globalNav-list_secondary</strong>"&gt;
+			&lt;li class="<strong>hidden-phone</strong>"&gt;
+				&lt;label class="<strong>globalNav-link_notifications isCritical</strong>" for="toggleSidepanel"&gt;
+					&lt;span class="<strong>globalNav-iconWrapper_secondary</strong>"&gt;
+						&lt;span class="<strong>globalNav-navIcon globalNav-navIcon_linkNotifications</strong>">&lt;/span&gt;
+						&lt;span class="<strong>notificationCount</strong>">5&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span class="<strong>globalNav-navText_secondary</strong>">Alerts&lt;/span&gt;
+				&lt;/label&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#" class="<strong>globalNav-link_settings</strong>"&gt;
+					&lt;span class="<strong>globalNav-iconWrapper_secondary</strong>"&gt;
+						&lt;span class="<strong>globalNav-navIcon globalNav-navIcon_linkSettings</strong>">&lt;/span&gt;
+					&lt;/span&gt;
+					&lt;span class="<strong>globalNav-navText_secondary</strong>">Settings&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class="<strong>globalNav-listItem_logout</strong>"&gt;
+				&lt;a href="#" class="<strong>globalNav-link_logout</strong>">Button&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="<strong>foreground-container _demo-foreground-container</strong>"&gt;
+	&lt;div class="<strong>globalNav_mobile</strong>"&gt;
+		&lt;label for="toggleNavigation" tabindex="1" class="<strong>globalNav-toggleTrigger</strong>"&gt;
+			Main Menu
+		&lt;/label&gt;
+		&lt;div class="<strong>globalNav-brand_mobile</strong>"&gt;
+			&lt;a href="#"&gt;
+				&lt;img src="img/a_logo.png" alt="Logo" width="106" height="24"&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="<strong>globalNav-actions_mobile</strong>"&gt;
+			&lt;ul class="<strong>globalNav-actionsList_mobile</strong>"&gt;
+				&lt;li class="<strong>globalNav-actionItem_mobile globalNav-notificationItem_mobile</strong>"&gt;
+					&lt;label class="<strong>globalNav-link_notifications isCritical</strong>" for="toggleSidepanel"&gt;
+						&lt;span class="<strong>globalNav-iconWrapper_secondary</strong>"&gt;
+							&lt;span class="<strong>globalNav-navIcon globalNav-navIcon_linkNotifications</strong>">&lt;/span&gt;
+							&lt;span class="<strong>notificationCount</strong>">5&lt;/span&gt;
+						&lt;/span&gt;
+						&lt;span class="<strong>globalNav-navText_secondaryMobile</strong>">Notifications&lt;/span&gt;
+					&lt;/label&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="<strong>mainContent</strong>"&gt;Content goes here&lt;/div&gt;
+  	&lt;label class="<strong>globalNav-toggleTrigger_overlay</strong>"for="toggleNavigation"&gt;&lt;/label&gt;
+&lt;/div&gt;
+			</pre>
+		</div>
+	</div>
+</div>
+
+<script src="../js/lib.js"></script>
+
+</body></html>

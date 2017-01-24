@@ -1,0 +1,45 @@
+
+
+@font-face {
+	font-family: Geomanist;
+	font-style: normal;
+	font-weight: 200;
+
+	src: url('../font/geomanist-regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../font/geomanist-regular-webfont.woff2') format('woff2'), /* Moderner Browsers */
+		 url('../font/geomanist-regular-webfont.woff') format('woff'), /* Modern Browsers */
+		 url('../font/geomanist-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: Geomanist;
+	font-style: normal;
+	font-weight: 400;
+
+	src: url('../font/geomanist-regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../font/geomanist-regular-webfont.woff2') format('woff2'), /* Moderner Browsers */
+		 url('../font/geomanist-regular-webfont.woff') format('woff'), /* Modern Browsers */
+		 url('../font/geomanist-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: Geomanist-Big;
+	font-style: normal;
+	font-weight: 500;
+
+	src: url('../font/geomanist-regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../font/geomanist-regular-webfont.woff2') format('woff2'), /* Moderner Browsers */
+		 url('../font/geomanist-regular-webfont.woff') format('woff'), /* Modern Browsers */
+		 url('../font/geomanist-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: Geomanist-Big;
+	font-style: normal;
+	font-weight: 600;
+
+	src: url('../font/geomanist-regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../font/geomanist-regular-webfont.woff2') format('woff2'), /* Moderner Browsers */
+	url('../font/geomanist-regular-webfont.woff') format('woff'), /* Modern Browsers */
+	url('../font/geomanist-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}

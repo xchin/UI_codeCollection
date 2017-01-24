@@ -1,0 +1,111 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>VX Library Docs &amp; Demo</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../css/twbs-light.css">
+	<link rel="stylesheet" href="../css/geomanist.css">
+	<link rel="stylesheet" href="../css/component2.css">
+</head>
+<body class="addFlowTransition hasFadeTransition" id="control">
+	<div class="_demo-rootContainer">
+		<div class="foreground-container _demo-foreground-container">
+			<div class="mainContent">
+				<div class="_demo-content"><div>
+				<h2>Flow Transitions</h2>
+				<p>To view the demo, click the button below. This will refresh the page demonstrating the simple transition.</p>
+				<a href="transitions.html" class="btn bsBtnMod flowTrigger">Refresh Page</a>
+				<h3>Example code below:</h3>
+				<pre>&lt;body class="addFlowTransition" id="control "&gt;
+	&lt;a href="some/other/page.html" class="flowTrigger"&gt;Trigger Flow&lt;/a&gt;
+&lt;/body&gt;
+
+// To reverse the transition, add the hasFadeTransition class for the component to remove it after load
+&lt;body class="addFlowTransition hasFadeTransition" id="root"&gt;
+	&lt;a href="some/other/page.html" class="flowTrigger"&gt;Trigger Flow&lt;/a&gt;
+&lt;/body&gt;
+				</pre>
+				<hr>
+				<h3>Stepped Transitions Demo</h3>
+				<p>To view the demo, click the button below. This will open a flow "overpanel" to demonstrate the step transition.</p>
+				<button class="bsBtnMod modal-trigger btn" data-modal-id="_demoVxModal-stepped">Open Flow</button>
+				<h3>Example code below:</h3>
+				<pre>
+&lt;div class="steppedFlow-container"&gt;
+	&lt;div class="steppedFlow"&gt;
+		&lt;div class="steppedFlow-slides"&gt;
+			&lt;div class="steppedFlow-slide [activeSlide]"&gt;			
+			&lt;/div&gt;
+			&lt;div class="steppedFlow-slide"&gt;			
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+## JavaScript
+VX.transitions.slideToStep({container: DOM node}, {currentStep: int}, {requestedStep: int});
+				</pre>
+			</div>
+		</div>
+	</div>
+	<label class="globalNav-toggleTrigger_overlay" for="toggleNavigation"></label>
+	<label class="sidepanel-toggleTrigger_overlay" for="toggleSidepanel"></label>
+</div>
+<div class="modal-flow" id="_demoModal-stepped">
+	<div class="modal-wrapper">
+		<button class="backBtn backBtn_flow _demo_stepBackward">
+			<span>Back</span>
+		</button>
+		<button class="modal-dismiss_x-trigger" data-modal-id="_demoModal-stepped">
+			<span class="a11yText">Close</span>
+		</button>
+	<div class="modal-content steppedFlow-container">
+		<div class="steppedFlow">
+			<div class="steppedFlow-slides">
+				<div class="steppedFlow-slide activeSlide">
+					<header class="modal-header">
+						<h2>Step One</h2>
+					</header>
+					<div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					<div class="btn-group">
+						<button class="btn bsBtnMod _demo_stepForward">Continue</button>
+					</div>
+				</div>
+				<div class="steppedFlow-slide">
+					<header class="modal-header">
+						<h2>Step Two</h2>
+					</header>
+					<div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					<div class="btn-group">
+						<button class="btn bsBtnMod modal-dismiss_trigger" data-modal-id="_demoVxModal-stepped">Done</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<script src="../js/lib.js"></script>
+<script>
+	(function (win, doc, undefined) {
+		var currentStep = 1;
+		document.body.addEventListener('click', function (e) {
+			var container = document.querySelector('.steppedFlow-container');
+			if (e.target.className.indexOf('_demo_stepForward') !== -1) {
+				VX.transitions.slideToStep(container, currentStep, currentStep + 1);
+				currentStep++;
+			} else if (e.target.className.indexOf('_demo_stepBackward') !== -1 ||
+				e.target.parentNode.className.indexOf('_demo_stepBackward') !== -1) {
+				if (currentStep === 1) {
+					return false;
+				}
+				VX.transitions.slideToStep(container, currentStep, currentStep - 1);
+				currentStep--;
+			}
+		}, true);
+	}(window, document));
+</script>
+
+</body>
+</html>
